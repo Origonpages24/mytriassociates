@@ -1,0 +1,208 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@font-face {
+    font-family: poppins;
+    src: url(Assets/Poppins/Poppins-Medium.ttf);
+}
+:root{
+    --primary-color: #00509D; 
+}
+.nav-item a{
+    font-size: 15px;
+}
+.navbar-brand{
+    width: 60px;
+    .navbar-brand img{
+        width: 100%;
+    }
+}
+.login-btn{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 8px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25em;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #1e1e1e;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: var(--primary-color);
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* left: 50%; */
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px ;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before{
+    width: 80%;
+    visibility: visible;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.row{
+    align-items: center;
+}
+.banner-main{
+    margin-top: 60px;
+}
+.col img{
+    width: 80%;
+    object-fit: cover;
+}
+.banner-content h1{
+    font-size: 40px;
+}
+.banner-content span{
+    color: var(--primary-color);
+}
+.banner-content{
+    color: #1e1e1e;
+}
+.banner-content p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 60%;
+}
+.banner-btn{
+    background-color: none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 400px;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.sign-in{
+    background-color: var(--primary-color);
+    color: white;
+}
+.banner-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.sign-in:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width:1024px) {
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .col img{
+        width: 100%;
+        object-fit: cover;
+        /* padding-left: 60px; */
+    }
+    .banner-content p{
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 60%;
+    }
+    .banner-btn{
+        background-color: none;
+        color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 400px;
+        border: 1px solid var(--primary-color);
+        padding: 8px 18px;
+        border-radius: 4px;
+    }
+    .sign-in{
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+@media (max-width:720px) {
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .col img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner-content p{
+        font-size: 10px;
+        font-weight: 400;
+        opacity: 60%;
+    }
+    .banner-btn{
+        background-color: none;
+        color: var(--primary-color);
+        font-size: 12px;
+        font-weight: 400px;
+        border: 1px solid var(--primary-color);
+        padding: 4px 10px;
+        border-radius: 4px;
+    }
+    .sign-in{
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+@media (max-width:470px) {
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .col img{
+        width: 100%;
+        object-fit: cover;
+        /* padding-left: 60px; */
+    }
+    .banner-content p{
+        font-size: 10px;
+        font-weight: 400;
+        opacity: 60%;
+    }
+    .banner-btn{
+        background-color: none;
+        color: var(--primary-color);
+        font-size: 12px;
+        font-weight: 400px;
+        border: 1px solid var(--primary-color);
+        padding: 4px 10px;
+        border-radius: 4px;
+    }
+    .sign-in{
+        background-color: var(--primary-color);
+        color: white;
+    }
+    .banner-main .row {
+        flex-direction: column;
+      }
+      .banner-main .col {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .banner-content{
+        text-align: center;
+      }
+}
